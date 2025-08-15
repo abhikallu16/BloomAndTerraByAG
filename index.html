@@ -13,7 +13,7 @@
         header {
             background-image: url('wal1.png');
             background-size: cover;
-            background-position: center 40%; /* Pushes image down */
+            background-position: center 40%;
             height: 300px;
             color: white;
             display: flex;
@@ -74,6 +74,14 @@
             height: auto;
             border-radius: 5px;
         }
+        /* Resizing for specific images in every section */
+        .products img[src="key1.jpg"],
+        .products img[src="magnet.jpg"],
+        .products img[src="teddy.png"],
+        .products img[src="bunny.png"] {
+            width: 150px;
+            height: auto;
+        }
         .product h3 {
             margin: 10px 0 5px;
         }
@@ -110,8 +118,6 @@
 <body>
 
 <header>
-<!--     <h1></h1> -->
-<!--     <p>Handmade Keychains, Jewelry, and More</p> -->
 </header>
 
 <nav>
@@ -122,14 +128,6 @@
 </nav>
 
 <section id="keychains">
-   <style>
-        /* Reduce only key1.jpg */
-        .products img[src="key1.jpg"] {
-            width: 150px;
-            height: auto;
-        }
-    </style>
-
     <h2>Keychains</h2>
     <div class="products">
         <div class="product">
@@ -182,18 +180,18 @@
         </div>
     </div>
 </section>
+
 <section id="CuteToys">
     <h2>Cute Toys</h2>
-    <hr>
-    <div class="product-container">
-        <div class="product-card">
-            <h3>Teddy Bear</h3>
+    <div class="products">
+        <div class="product">
             <img src="teddy.png" alt="Teddy Bear">
+            <h3>Teddy Bear</h3>
             <p>Soft and cuddly handmade teddy bear.</p>
         </div>
-        <div class="product-card">
-            <h3>Clay Bunny</h3>
+        <div class="product">
             <img src="bunny.png" alt="Clay Bunny">
+            <h3>Clay Bunny</h3>
             <p>Adorable bunny made with love.</p>
         </div>
     </div>
