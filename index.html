@@ -53,22 +53,22 @@
             border-bottom: 2px solid #ff8c94;
             padding-bottom: 5px;
         }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
         .product {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow: hidden;
-            text-align: center;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    display: inline-block; /* Make it fit image size */
+    padding: 10px; /* Small padding */
+}
+
+.product img {
+    display: block;
+    width: auto;
+    height: 150px; /* fixed height */
+    margin: auto;
+}
         .product img {
             max-width: 100%;
             height: auto;
