@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom & Terra by AG</title>
+    <title>Clay Creations</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
         }
+
         header {
-            background-image: url('wal1.png');
+            background-image: url('wal1.png'); /* Replace with your wallpaper */
             background-size: cover;
-            background-position: center 40%;
-            height: 300px;
+            background-position: center;
+            height: 250px;
             color: white;
             display: flex;
             flex-direction: column;
@@ -22,129 +25,70 @@
             align-items: center;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
         }
+
         header h1 {
-            font-size: 3rem;
-            text-align: center;
+            font-size: 2.5rem;
+            margin: 0;
         }
-        header p {
-            font-size: 1.2rem;
-            text-align: center;
+
+        section {
+            padding: 20px;
         }
-        nav {
-            background: #333;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
         }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background: #000000;
-        }
-        section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #ff8c94;
-            padding-bottom: 5px;
-        }
-        .product {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    display: inline-block; /* Make it fit image size */
-    padding: 10px; /* Small padding */
-}
 
-.product img {
-    display: block;
-    width: auto;
-    height: 150px; /* fixed height */
-    margin: auto;
-}
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 200px;
+            height: 280px; /* fixed height for uniform cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
         .product img {
-            max-width: 100%;
-            height: auto;
+            display: block;
+            width: auto;
+            height: 150px; /* uniform image height */
+            margin: auto;
+            object-fit: cover;
             border-radius: 5px;
         }
-        .products img[src="key1.jpg"],
-        .products img[src="magnet.jpg"],
-        .products img[src="teddy.png"],
-        .products img[src="bunny.png"] {
-            width: 150px;
-            height: auto;
-        }
-        .product h3 {
-            margin: 10px 0 5px;
-        }
-        .product p {
-            color: #888;
-            margin-bottom: 10px;
-        }
+
         .buy-btn {
             display: inline-block;
-            background: #25d366;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .buy-btn:hover {
-            background: #1ebc57;
-        }
-        @media (max-width: 768px) {
-            header {
-                height: 200px;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-            header p {
-                font-size: 1rem;
-            }
-        }
-
-        /* Scroll to Top Button Styles */
-        #scrollTopBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
             background-color: #ff8c94;
             color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+            padding: 8px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
         }
-        #scrollTopBtn:hover {
-            background-color: #ff6b7a;
+
+        .buy-btn:hover {
+            background-color: #e67a84;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <h1>Clay Creations</h1>
 </header>
-
-<nav>
-    <a href="#keychains">Keychains</a>
-    <a href="#magnets">Fridge Magnets</a>
-    <a href="#jewelry">Jewelry</a>
-    <a href="#CuteToys">Cute Toys</a>
-</nav>
 
 <section id="keychains">
     <h2>Keychains</h2>
@@ -156,7 +100,7 @@
             <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Flower%20Keychain">Buy on WhatsApp</a>
         </div>
         <div class="product">
-            <img src="key2.jpg" alt="Keychain">
+            <img src="https://via.placeholder.com/200" alt="Keychain">
             <h3>Animal Keychain</h3>
             <p>₹200</p>
             <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Animal%20Keychain">Buy on WhatsApp</a>
@@ -164,82 +108,41 @@
     </div>
 </section>
 
-<section id="magnets">
+<section id="fridge-magnets">
     <h2>Fridge Magnets</h2>
     <div class="products">
         <div class="product">
-            <img src="magnet.jpg" alt="Magnet">
+            <img src="https://via.placeholder.com/200" alt="Magnet">
             <h3>Fruit Magnet</h3>
-            <p>₹100</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Fruit%20Magnet">Buy on WhatsApp</a>
-        </div>
-        <div class="product">
-            <img src="magnet2.jpg" alt="Magnet">
-            <h3>Cartoon Magnet</h3>
             <p>₹120</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Cartoon%20Magnet">Buy on WhatsApp</a>
+            <a class="buy-btn" href="#">Buy on WhatsApp</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Magnet">
+            <h3>Cartoon Magnet</h3>
+            <p>₹130</p>
+            <a class="buy-btn" href="#">Buy on WhatsApp</a>
         </div>
     </div>
 </section>
 
-<section id="jewelry">
-    <h2>Jewelry</h2>
-    <div class="products">
-        <div class="product">
-            <img src="ear3.jpg" alt="Earrings">
-            <h3>Clay Earrings</h3>
-            <p>₹250</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Clay%20Earrings">Buy on WhatsApp</a>
-        </div>
-        <div class="product">
-            <img src="brace1.jpg" alt="Neck Chain">
-            <h3>Neck Chain</h3>
-            <p>₹400</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Neck%20Chain">Buy on WhatsApp</a>
-        </div>
-    </div>
-</section>
-
-<section id="CuteToys">
+<section id="cute-toys">
     <h2>Cute Toys</h2>
     <div class="products">
-        <div class="Teddys">
-            <img src="1mg4.jpg" alt="Cute Toys">
-            <h3>Teddys</h3>
-            <p>₹400</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Neck%20Chain">Buy on WhatsApp</a>        </div>
-        <div class="Toys">
-            <img src="img6.jpg" alt="Cute Toys">
-            <h3>Cute toys</h3>
-            <p>₹400</p>
-            <a class="buy-btn" href="https://wa.me/919876543210?text=I%20want%20to%20buy%20the%20Neck%20Chain">Buy on WhatsApp</a>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Toy">
+            <h3>Teddy Toy</h3>
+            <p>₹300</p>
+            <a class="buy-btn" href="#">Buy on WhatsApp</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Toy">
+            <h3>Bunny Toy</h3>
+            <p>₹350</p>
+            <a class="buy-btn" href="#">Buy on WhatsApp</a>
         </div>
     </div>
 </section>
-
-<!-- Scroll to Top Button -->
-<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
-
-<script>
-    let scrollBtn = document.getElementById("scrollTopBtn");
-
-    // Show button when user scrolls down
-    window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            scrollBtn.style.display = "block";
-        } else {
-            scrollBtn.style.display = "none";
-        }
-    };
-
-    // Scroll to top when clicked
-    function topFunction() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-</script>
 
 </body>
 </html>
